@@ -1,18 +1,23 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MdToolbarModule, MdIconModule, MdButtonModule } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MdToolbarModule
   ],
   declarations: [
     HeaderComponent, 
-    FooterComponent],
+    FooterComponent, 
+    SidebarComponent],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ]
 })
 export class CoreModule { 

@@ -1,17 +1,16 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="side">
+    <app-sidebar></app-sidebar>
+  </md-sidenav>
 <div class="site">
   <header>
-    <app-header></app-header>
+    <app-header (toggle)="sidenav.toggle()"></app-header>
   </header>
   <main>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <button (click)="sidenav.toggle()">打开侧边栏</button>
   </main>
   <footer>
     <app-footer></app-footer>
   </footer>
 </div>
-
+</md-sidenav-container>
