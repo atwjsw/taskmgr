@@ -10,7 +10,8 @@ export class HeaderComponent implements OnInit {
   @Output()
   toggle = new EventEmitter<void>();
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
   }
