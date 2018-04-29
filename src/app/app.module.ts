@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module'
 import { MdSidenavModule } from '@angular/material'
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from "./app-routing.module";
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-
+import { LoginModule } from './login/login.module'
 
 @NgModule({
   declarations: [
@@ -13,8 +14,10 @@ import { FooterComponent } from './core/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MdSidenavModule,
-    CoreModule
+    CoreModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
