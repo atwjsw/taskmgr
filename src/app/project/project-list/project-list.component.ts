@@ -14,12 +14,12 @@ export class ProjectListComponent implements OnInit {
     {
       "name": "企业协作平台",
       "desc": "这是一个企业内部项目",
-      "coverImg": "assets/img/cover/0.jpg"
+      "coverImg": "assets/img/covers/0.jpg"
     },
     {
       "name": "自动化测试项目",
       "desc": "这是一个企业内部项目",
-      "coverImg": "assets/img/cover/1.jpg"
+      "coverImg": "assets/img/covers/1.jpg"
     }
   ]
 
