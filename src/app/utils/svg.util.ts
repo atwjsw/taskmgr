@@ -6,6 +6,7 @@ export const loadSvgResource = (ir: MdIconRegistry, ds: DomSanitizer) => {
     const sidebarDir = `${imgDir}/sidebar`;
     const dayDir = `${imgDir}/days`;
     const avatarDir = `${imgDir}/avatar`;
+    const iconDir = `${imgDir}/icons`;
 
     ir.addSvgIcon('gifts', ds.bypassSecurityTrustResourceUrl(`assets/gifts.svg`));
     
@@ -15,6 +16,9 @@ export const loadSvgResource = (ir: MdIconRegistry, ds: DomSanitizer) => {
     ir.addSvgIcon('project', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/project.svg`));
     ir.addSvgIcon('projects', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/gifts.svg`));
     ir.addSvgIcon('week', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/week.svg`));
+    ir.addSvgIcon('move', ds.bypassSecurityTrustResourceUrl(`${iconDir}/move.svg`));
+    ir.addSvgIcon('add', ds.bypassSecurityTrustResourceUrl(`${iconDir}/add.svg`));
+    ir.addSvgIcon('delete', ds.bypassSecurityTrustResourceUrl(`${iconDir}/delete.svg`));
 
     const days = [
         1, 2, 3, 4, 5, 6, 7, 8, 9, 10,

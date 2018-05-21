@@ -8,6 +8,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { LoginModule } from './login/login.module'
 import { ProjectModule } from './project/project.module'
+import { TaskModule } from './task/task.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProjectModule } from './project/project.module'
     MdSidenavModule,
     CoreModule,
     LoginModule,
-    ProjectModule
+    ProjectModule,
+    TaskModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
