@@ -16,7 +16,7 @@ export class ProjectItemComponent implements OnInit {
   @Output() onEdit = new EventEmitter<void>();
   @Output() onDel = new EventEmitter<void>();
   @HostBinding('@card') cardState = 'out';
-
+  
   constructor() { }
 
   ngOnInit() {
